@@ -1,0 +1,31 @@
+# 含真实密钥的本地配置（切勿提交）
+config.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# 临时/测试文件
+_*.json
+_*.md
+_*.docx
+_*.tex
+_*.png
+_*.jpg
+_*.webp
+draft.json
+paper.md
+review.md
+review.docx
+
+# 图像生成默认输出
+output/
+generated/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+*.log

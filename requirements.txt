@@ -1,0 +1,11 @@
+# 核心依赖（文献检索 / 精读 / 引文 / 综述 / 图表生成 / 格式修改）
+requests>=2.31
+PyMuPDF>=1.24
+Pillow>=10.0
+beautifulsoup4>=4.12
+
+# 可选：流程图 / 框架图（Graphviz 需要额外安装系统 graphviz 二进制）
+graphviz>=0.20
+
+# 可选：OpenAI 图像模型 provider
+openai>=1.40

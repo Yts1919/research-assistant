@@ -1,0 +1,46 @@
+{
+  "_comment": "复制本文件为 config.json 并填写。API Key 也可用环境变量代替（见 README）。",
+  "image_gen": {
+    "provider": "qwen",
+    "base_url": "",
+    "api_key": "",
+    "model": "wanx2.1-t2i-turbo"
+  },
+  "llm": {
+    "provider": "deepseek",
+    "base_url": "https://api.deepseek.com",
+    "api_key": "",
+    "model": "deepseek-chat"
+  },
+  "search": {
+    "crossref_mailto": "",
+    "translate": true,
+    "bilingual": true
+  },
+  "partition": {
+    "cas": { "csv": "", "name_col": "Journal", "quartile_col": "分区" },
+    "jcr": { "csv": "", "name_col": "Journal", "quartile_col": "Quartile" },
+    "sjr": { "csv": "", "name_col": "Title", "quartile_col": "Quartile" }
+  },
+  "panel": {
+    "_note": "DSH Web 右侧面板：json_path=检索结果，paper_json_path=论文精读，review_json_path=文献综述，section_json_path=分节写作，polish_json_path=学术润色，prereview_json_path=预投稿审稿，proposal_json_path=开题方案，reformat_json_path=格式修改（均指向 dsh-web-frontend/dist/），留空则不启用。",
+    "json_path": "",
+    "paper_json_path": "",
+    "review_json_path": "",
+    "section_json_path": "",
+    "polish_json_path": "",
+    "prereview_json_path": "",
+    "proposal_json_path": "",
+    "reformat_json_path": ""
+  },
+  "figure": {
+    "_note": "图表生成：output_dir=图片输出目录(指向 dsh-web-frontend/dist/assets/figures)，json_path=图表面板JSON。",
+    "output_dir": "",
+    "json_path": ""
+  },
+  "citation": {
+    "_note": "引文管理：json_path=引文面板JSON，formats_json=保存的自定义引文格式（均指向 dsh-web-frontend/dist/）。",
+    "json_path": "",
+    "formats_json": ""
+  }
+}
